@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+.container{
+    width: 500px;
+    height: 100px;
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(135deg,#14ffe9,#ffeb3b,#ff00e0);
+    animation: animate 1.5s linear infinite;
+}
+
+.small{
+    height: 80px;
+    width: 480px;
+    border-radius: 10px;
+    background: #1b1b1b;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+
+
+}
+
+.time{
+    line-height: 80px;
+    width: 480px;
+    text-align: center;
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animate 1.5s linear infinite;
+    background: linear-gradient(135deg,#14ffe9,#ffeb3b,#ff00e0);
+    
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    
+
+}
+
+
+span{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
